@@ -12,7 +12,7 @@
 | Plantas | 7 de 7 |
 | Traduções EN de anúncios | 11 de 150 (propostas, por rever) |
 
-Dados recolhidos das páginas públicas a 3 de novembro de 2026, sem acesso ao CRM. **É necessária autorização da PPI** para reutilizar conteúdos e fotografias, e o ideal é uma exportação do HCPro. `--max-photos=0`, com `research/fetch_media.py 0`, completa as galerias.
+Dados recolhidos das páginas públicas a 3 de novembro de 2026, sem acesso ao CRM. A PPI autorizou o uso dos conteúdos (confirmação do cliente, novembro de 2026). Para produção, o ideal continua a ser uma exportação do HCPro. `--max-photos=0`, com `research/fetch_media.py 0`, completa as galerias.
 
 ## Decisões da PPI antes de publicar
 **13 anúncios em conflito** (caixa «Revisão de dados»; alguns são falsos positivos do detetor, a confirmar manualmente):

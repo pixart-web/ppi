@@ -10,11 +10,8 @@ Reconstrução editorial e comercial de https://www.ppiestateagents.com/ («Casa
 bin/setup.sh
 ```
 
-Num clone novo, descarregue primeiro as fotografias (não estão no repositório) e as dependências de teste:
+As fotografias importadas estão em `migration/media/` (conteúdos autorizados pela PPI). Para correr os testes num clone novo:
 
-```bash
-python3 -I research/fetch_media.py 12
-```
 ```bash
 cd tools && npm install
 ```

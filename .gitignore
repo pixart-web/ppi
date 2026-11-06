@@ -7,6 +7,5 @@ tools/node_modules/
 tools/test-results/
 tools/playwright-report/
 research/raw/
-migration/media/
 .DS_Store
 *.log
