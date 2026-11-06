@@ -1,0 +1,86 @@
+# Ambiente local reproduzível da proposta PPI Estate Agents (WordPress PT/EN).
+# Apenas para revisão isolada. Portas publicadas só em loopback.
+name: ppi
+
+x-wp-env: &wp-env
+  WORDPRESS_DB_HOST: db
+  WORDPRESS_DB_NAME: wordpress
+  WORDPRESS_DB_USER: wordpress
+  WORDPRESS_DB_PASSWORD: ${DB_PASSWORD:-ppi-local}
+  WP_ENVIRONMENT_TYPE: ${WP_ENVIRONMENT_TYPE:-staging}
+  PPI_SMTP_HOST: ${PPI_SMTP_HOST:-mailpit}
+  PPI_SMTP_PORT: ${PPI_SMTP_PORT:-1025}
+  PPI_SMTP_USER: ${PPI_SMTP_USER:-}
+  PPI_SMTP_PASS: ${PPI_SMTP_PASS:-}
+  PPI_SMTP_SECURE: ${PPI_SMTP_SECURE:-}
+  PPI_MAIL_TEST_TO: ${PPI_MAIL_TEST_TO:-leads@ppi.test}
+  PPI_DEMO_PASSWORD: ${PPI_DEMO_PASSWORD:-}
+  WORDPRESS_DEBUG: "1"
+  WORDPRESS_CONFIG_EXTRA: |
+    define( 'WP_ENVIRONMENT_TYPE', getenv_docker( 'WP_ENVIRONMENT_TYPE', 'staging' ) );
+    define( 'DISALLOW_FILE_EDIT', true );
+    define( 'WP_POST_REVISIONS', 20 );
+    define( 'WP_DEBUG_DISPLAY', false );
+    define( 'WP_DEBUG_LOG', '/tmp/wp-debug.log' );
+
+x-wp-volumes: &wp-volumes
+  - wp:/var/www/html
+  - ./.data/uploads:/var/www/html/wp-content/uploads
+  - ./wp-content/themes/ppi-estates:/var/www/html/wp-content/themes/ppi-estates
+  - ./wp-content/plugins/ppi-core:/var/www/html/wp-content/plugins/ppi-core
+  - ./migration:/migration
+  - ./bin:/opt/ppi-bin:ro
+  - ./config/php.ini:/usr/local/etc/php/conf.d/ppi.ini:ro
+
+services:
+  db:
+    image: mariadb:11.4
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: ${DB_PASSWORD:-ppi-local}
+      MARIADB_RANDOM_ROOT_PASSWORD: "1"
+    volumes:
+      - ./.data/db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  wordpress:
+    image: wordpress:7.1-php8.3-apache
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:${WP_PORT:-8097}:80"
+    tmpfs:
+      - /tmp
+    environment: *wp-env
+    volumes: *wp-volumes
+
+  # Captura todos os emails gerados localmente; nada sai para a Internet.
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - "127.0.0.1:${MAILPIT_PORT:-8098}:8025"
+
+  cli:
+    image: wordpress:cli-php8.3
+    profiles: ["tools"]
+    user: "33:33"
+    tmpfs:
+      - /tmp:mode=1777
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      <<: *wp-env
+      HOME: /tmp
+      WP_CLI_CACHE_DIR: /tmp/wp-cli-cache
+    volumes: *wp-volumes
+
+# Base de dados e uploads ficam em ./.data (disco do anfitrião), fora do disco virtual do Docker.
+volumes:
+  wp:

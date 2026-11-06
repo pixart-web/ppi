@@ -1,0 +1,34 @@
+/* PPI Core — painel */
+.ppi-tabs__list{display:flex;flex-wrap:wrap;gap:2px;border-bottom:1px solid #c3c4c7;margin:0 0 16px}
+.ppi-tabs__list [role=tab]{background:#f6f7f7;border:1px solid #c3c4c7;border-bottom:0;padding:8px 14px;cursor:pointer;font-size:13px;margin-bottom:-1px}
+.ppi-tabs__list [role=tab][aria-selected=true]{background:#fff;font-weight:600;border-bottom:1px solid #fff}
+.ppi-tabs__list [role=tab]:focus-visible{outline:2px solid #2271b1;outline-offset:1px}
+.ppi-row{margin:0 0 14px;display:grid;gap:4px;max-width:640px}
+.ppi-row label,.ppi-label{font-weight:600}
+.ppi-row--bool label{font-weight:400}
+.ppi-row input[type=number]{max-width:220px}
+.ppi-checks{display:flex;flex-wrap:wrap;gap:6px 18px}
+.ppi-feat-table input{width:100%}
+.ppi-media__list{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0;padding:0;list-style:none}
+.ppi-media__list li{position:relative;width:96px;cursor:move;background:#f0f0f1;border:1px solid #dcdcde}
+.ppi-media__list li:first-child{outline:2px solid #31483E}
+.ppi-media__list li:first-child::after{content:attr(data-cover);position:absolute;top:2px;left:2px;background:#31483E;color:#fff;font-size:10px;padding:1px 4px}
+.ppi-media__list img{display:block;width:96px;height:96px;object-fit:cover}
+.ppi-media__actions{display:flex;justify-content:space-between;font-size:11px;padding:2px 3px;background:#fff}
+.ppi-danger{color:#b32d2e!important}
+.ppi-focal{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:100100;display:grid;place-items:center}
+.ppi-focal__box{background:#fff;padding:16px;max-width:min(900px,92vw)}
+.ppi-focal__img{position:relative;cursor:crosshair}
+.ppi-focal__img img{display:block;max-width:100%;max-height:70vh}
+.ppi-focal__dot{position:absolute;width:18px;height:18px;margin:-9px 0 0 -9px;border:3px solid #fff;border-radius:50%;box-shadow:0 0 0 2px #000;pointer-events:none}
+.ppi-review.is-open{border-left:4px solid #b32d2e;padding-left:8px}
+.ppi-review.is-resolved{border-left:4px solid #31483E;padding-left:8px}
+.ppi-review ul,.ppi-warnings{margin:0 0 8px 16px;list-style:disc}
+.ppi-review li,.ppi-warnings li{font-size:12px}
+.ppi-pill{display:inline-block;padding:1px 8px;border-radius:2px;background:#f0f0f1;font-size:12px}
+.ppi-pill--bad{background:#fcf0f1;color:#8a2424}
+.ppi-pill--ok{background:#edf5ef;color:#1f4a2b}
+.ppi-pill--wait{background:#fcf9e8;color:#614a00}
+.ppi-pre{white-space:pre-wrap;max-height:320px;overflow:auto;background:#f6f7f7;padding:8px;font-size:11px}
+.ppi-msg{background:#f6f7f7;padding:12px;white-space:normal}
+.column-ppi_thumb{width:64px}.column-ppi_ref{width:90px}

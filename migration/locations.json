@@ -1,0 +1,48 @@
+{
+ "format": "ppi-locations/1",
+ "status": "Textos editoriais propostos, por rever pela PPI.",
+ "items": {
+  "vila-do-bispo": {
+   "intro_pt": "Vila do Bispo ocupa o extremo sudoeste do Algarve, com costa virada a sul e a oeste. Grande parte do litoral integra o Parque Natural do Sudoeste Alentejano e Costa Vicentina, o que marca a paisagem e as regras de construção.\n\nO concelho reúne as freguesias de Budens, Barão de São Miguel, Sagres e Vila do Bispo e Raposeira. É a zona com mais imóveis no catálogo da PPI, sobretudo terrenos e moradias.",
+   "intro_en": "Vila do Bispo sits at the south-western tip of the Algarve, with coastline facing both south and west. Much of the shore lies within the Southwest Alentejo and Vicentine Coast Natural Park, which shapes both the landscape and the building rules.\n\nThe municipality brings together the parishes of Budens, Barão de São Miguel, Sagres, and Vila do Bispo e Raposeira. It is the area with the most properties in the PPI catalogue, mainly land and houses.",
+   "image_file": "regions/vila-do-bispo.jpg",
+   "image_source": "https://commons.wikimedia.org/wiki/File:Vila_do_Bispo_-_Algarve_-_11.03.2023.jpg",
+   "image_credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Vila_do_Bispo_-_Algarve_-_11.03.2023.jpg\" rel=\"noopener\">Bextrel, CC BY-SA 4.0</a>"
+  },
+  "budens": {
+   "intro_pt": "Budens é a freguesia onde fica o escritório da PPI, junto à E.N. 125 e à entrada do Parque da Floresta. Inclui a aldeia piscatória da Salema, a praia da Boca do Rio e o resort de golfe de Santo António.\n\nO catálogo aqui é variado: moradias no resort, casas de aldeia, apartamentos perto da praia e terrenos no campo.",
+   "intro_en": "Budens is the parish where the PPI office is located, on the E.N. 125 at the entrance to Parque da Floresta. It includes the fishing village of Salema, Boca do Rio beach and the Santo António golf resort.\n\nThe catalogue here is varied: resort villas, village houses, apartments near the beach and land in the countryside.",
+   "image_file": "regions/budens.jpg",
+   "image_source": "https://commons.wikimedia.org/wiki/File:Praia_da_Boca_do_Rio_-_Budens._28.09.2019.jpg",
+   "image_credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Praia_da_Boca_do_Rio_-_Budens._28.09.2019.jpg\" rel=\"noopener\">Bextrel, CC BY-SA 4.0</a>"
+  },
+  "lagos": {
+   "intro_pt": "Lagos é a principal cidade do barlavento algarvio, com centro histórico muralhado, marina e as falésias da Ponta da Piedade. Tem serviços durante todo o ano, o que pesa na escolha de quem pensa viver cá em permanência.\n\nNo catálogo da PPI, o concelho inclui apartamentos e moradias na cidade e quintas nas freguesias de Bensafrim e Barão de São João, Luz e Odiáxere.",
+   "intro_en": "Lagos is the main town of the western Algarve, with a walled historic centre, a marina and the cliffs of Ponta da Piedade. It has year-round services, which matters to anyone thinking of living here permanently.\n\nIn the PPI catalogue, the municipality includes apartments and houses in town, and country estates in the parishes of Bensafrim e Barão de São João, Luz and Odiáxere.",
+   "image_file": "regions/lagos.jpg",
+   "image_source": "https://commons.wikimedia.org/wiki/File:Farol_da_Ponta_da_Piedade_1.jpg",
+   "image_credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Farol_da_Ponta_da_Piedade_1.jpg\" rel=\"noopener\">Einaz80, CC BY-SA 4.0</a>"
+  },
+  "luz": {
+   "intro_pt": "A Luz é uma freguesia do concelho de Lagos, a oeste da cidade, com uma praia de areia voltada a sul. Os imóveis da PPI nesta zona incluem terrenos e quintas nos Montinhos da Luz e casas em resort.",
+   "intro_en": "Luz is a parish in the municipality of Lagos, west of the town, with a south-facing sandy beach. PPI properties here include land and country estates at Montinhos da Luz and resort houses.",
+   "image_file": "regions/luz.jpg",
+   "image_source": "https://commons.wikimedia.org/wiki/File:Portugal_-_Algarve_-_Praia_de_Luz_(25719416751).jpg",
+   "image_credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Portugal_-_Algarve_-_Praia_de_Luz_(25719416751).jpg\" rel=\"noopener\">muffinn from Worcester, UK, CC BY 2.0</a>"
+  },
+  "vila-de-sagres": {
+   "intro_pt": "Sagres fica no extremo do promontório com o mesmo nome, perto do Cabo de São Vicente. É conhecida pela fortaleza, pelo porto de pesca e pelas praias expostas ao Atlântico, muito procuradas para o surf.",
+   "intro_en": "Sagres lies at the end of the headland of the same name, close to Cape St Vincent. It is known for its fortress, its fishing harbour and its Atlantic-facing beaches, popular for surfing.",
+   "image_file": "regions/vila-de-sagres.jpg",
+   "image_source": "https://commons.wikimedia.org/wiki/File:Sagres,_Algarve_-_11.03.2023.jpg",
+   "image_credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Sagres,_Algarve_-_11.03.2023.jpg\" rel=\"noopener\">Bextrel, CC BY-SA 4.0</a>"
+  },
+  "aljezur": {
+   "intro_pt": "Aljezur fica na costa oeste do Algarve, dentro do Parque Natural do Sudoeste Alentejano e Costa Vicentina. A vila desenvolve-se aos pés do castelo, e o concelho tem praias atlânticas como a Arrifana e a Amoreira.",
+   "intro_en": "Aljezur is on the Algarve's west coast, within the Southwest Alentejo and Vicentine Coast Natural Park. The town spreads out below its castle, and the municipality has Atlantic beaches such as Arrifana and Amoreira.",
+   "image_file": "regions/aljezur.jpg",
+   "image_source": "https://commons.wikimedia.org/wiki/File:Vista_geral_de_Aljezur_-_16.10.2019.jpg",
+   "image_credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Vista_geral_de_Aljezur_-_16.10.2019.jpg\" rel=\"noopener\">Bextrel, CC BY-SA 4.0</a>"
+  }
+ }
+}

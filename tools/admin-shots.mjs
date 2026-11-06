@@ -1,0 +1,12 @@
+import { chromium } from '@playwright/test';
+import { readFileSync } from 'node:fs';
+const t = readFileSync(new URL('../.credentials.local', import.meta.url), 'utf8');
+const base = 'http://ppi.localhost:8097', out = new URL('../docs/capturas/', import.meta.url).pathname;
+const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1440, height: 1000 } });
+await p.goto(base + '/wp-login.php'); await p.fill('#user_login', t.match(/USER=(.*)/)[1]); await p.fill('#user_pass', t.match(/PASS=(.*)/)[1]); await p.click('#wp-submit'); await p.waitForURL(/wp-admin/);
+await p.goto(base + '/wp-admin/edit.php?post_type=ppi_property&ppi_review=open'); await p.screenshot({ path: out + 'admin-revisao.jpg', quality: 65, type: 'jpeg' });
+const href = await p.locator('a.row-title').first().getAttribute('href');
+await p.goto(href); await p.screenshot({ path: out + 'admin-imovel.jpg', quality: 65, type: 'jpeg', fullPage: true });
+await p.click('#ppi-tab-media'); await p.locator('#ppi-panel-media').scrollIntoViewIfNeeded(); await p.screenshot({ path: out + 'admin-media.jpg', quality: 65, type: 'jpeg' });
+const errs = await p.evaluate(() => document.querySelectorAll('.notice-error').length); console.log('erros admin', errs);
+await b.close();

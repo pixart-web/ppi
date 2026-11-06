@@ -1,0 +1,14 @@
+{
+  "name": "ppi-tools",
+  "private": true,
+  "description": "Ferramentas locais de QA: testes end-to-end, acessibilidade (axe), capturas e desempenho. Não são necessárias em produção.",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "screenshots": "node screenshots.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@axe-core/playwright": "4.10.2"
+  }
+}

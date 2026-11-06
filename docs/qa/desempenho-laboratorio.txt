@@ -1,0 +1,3 @@
+home: LCP 1.73 s · CLS 0.000 · 10 pedidos · 299 KB
+listagem: LCP 2.22 s · CLS 0.000 · 10 pedidos · 446 KB
+ficha: LCP 1.28 s · CLS 0.000 · 8 pedidos · 183 KB

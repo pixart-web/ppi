@@ -1,0 +1,11 @@
+ENSAIO (nada gravado) — processados 150 de 150 · criados 0 · atualizados 0 · sem alterações 150 · edições locais preservadas 0 · ignorados 
+APLICADO — processados 150 de 150 · criados 0 · atualizados 0 · sem alterações 150 · edições locais preservadas 0 · ignorados 0 · conflito
+Success: 11 traduções criadas/atualizadas (en).
+Success: 14 páginas (PT/EN), menus e destaques configurados.
+Success: 164 linhas em /migration/redirects.csv
+pt/publish        137
+pt/pending        13
+pt/listáveis     137
+en/publish        11
+en/pending        0
+en/listáveis     11

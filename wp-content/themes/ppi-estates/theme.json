@@ -1,0 +1,127 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.0/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": false,
+		"useRootPaddingAwareAlignments": true,
+		"color": {
+			"custom": false,
+			"customGradient": false,
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"defaultDuotone": false,
+			"gradients": [],
+			"duotone": [],
+			"palette": [
+				{ "slug": "ivory", "name": "Marfim", "color": "#F5F2EC" },
+				{ "slug": "paper", "name": "Branco", "color": "#FFFFFF" },
+				{ "slug": "stone", "name": "Pedra", "color": "#DAD3C8" },
+				{ "slug": "charcoal", "name": "Carvão", "color": "#242825" },
+				{ "slug": "muted", "name": "Texto secundário", "color": "#5B605B" },
+				{ "slug": "green", "name": "Verde profundo", "color": "#31483E" },
+				{ "slug": "green-dark", "name": "Verde escuro", "color": "#263A31" },
+				{ "slug": "terracotta", "name": "Terracota (só títulos grandes e filetes)", "color": "#A85F45" },
+				{ "slug": "terracotta-ink", "name": "Terracota texto", "color": "#8E4E38" }
+			]
+		},
+		"typography": {
+			"customFontSize": false,
+			"dropCap": false,
+			"fontStyle": true,
+			"fontWeight": false,
+			"letterSpacing": false,
+			"textDecoration": false,
+			"textTransform": false,
+			"fluid": true,
+			"defaultFontSizes": false,
+			"fontFamilies": [
+				{
+					"slug": "serif",
+					"name": "Source Serif 4",
+					"fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+					"fontFace": [
+						{ "fontFamily": "Source Serif 4", "fontWeight": "400", "fontStyle": "normal", "fontDisplay": "swap", "src": [ "file:./assets/fonts/source-serif-4-latin-400-normal.woff2" ] },
+						{ "fontFamily": "Source Serif 4", "fontWeight": "400", "fontStyle": "italic", "fontDisplay": "swap", "src": [ "file:./assets/fonts/source-serif-4-latin-400-italic.woff2" ] },
+						{ "fontFamily": "Source Serif 4", "fontWeight": "600", "fontStyle": "normal", "fontDisplay": "swap", "src": [ "file:./assets/fonts/source-serif-4-latin-600-normal.woff2" ] }
+					]
+				},
+				{
+					"slug": "sans",
+					"name": "Source Sans 3",
+					"fontFamily": "\"Source Sans 3\", \"Segoe UI\", system-ui, -apple-system, sans-serif",
+					"fontFace": [
+						{ "fontFamily": "Source Sans 3", "fontWeight": "400", "fontStyle": "normal", "fontDisplay": "swap", "src": [ "file:./assets/fonts/source-sans-3-latin-400-normal.woff2" ] },
+						{ "fontFamily": "Source Sans 3", "fontWeight": "600", "fontStyle": "normal", "fontDisplay": "swap", "src": [ "file:./assets/fonts/source-sans-3-latin-600-normal.woff2" ] }
+					]
+				}
+			],
+			"fontSizes": [
+				{ "slug": "small", "name": "Pequeno", "size": "0.9375rem", "fluid": false },
+				{ "slug": "base", "name": "Corpo", "size": "1.0625rem", "fluid": { "min": "1rem", "max": "1.125rem" } },
+				{ "slug": "lead", "name": "Destaque", "size": "1.25rem", "fluid": { "min": "1.125rem", "max": "1.375rem" } },
+				{ "slug": "h3", "name": "Título 3", "size": "1.5rem", "fluid": { "min": "1.3rem", "max": "1.6rem" } },
+				{ "slug": "h2", "name": "Título 2", "size": "2.25rem", "fluid": { "min": "1.75rem", "max": "2.5rem" } },
+				{ "slug": "h1", "name": "Título 1", "size": "3.25rem", "fluid": { "min": "2.125rem", "max": "3.75rem" } }
+			]
+		},
+		"spacing": {
+			"customSpacingSize": false,
+			"defaultSpacingSizes": false,
+			"units": [ "px", "rem", "%" ],
+			"spacingSizes": [
+				{ "slug": "20", "name": "XS", "size": "0.5rem" },
+				{ "slug": "30", "name": "S", "size": "1rem" },
+				{ "slug": "40", "name": "M", "size": "clamp(1.25rem, 2.5vw, 2rem)" },
+				{ "slug": "50", "name": "L", "size": "clamp(2rem, 5vw, 4rem)" },
+				{ "slug": "60", "name": "XL", "size": "clamp(3rem, 8vw, 7rem)" }
+			]
+		},
+		"layout": { "contentSize": "44rem", "wideSize": "90rem" },
+		"border": { "radius": false, "color": false, "style": false, "width": false },
+		"shadow": { "defaultPresets": false, "presets": [] },
+		"blocks": {
+			"core/button": { "border": { "radius": false } },
+			"core/image": { "lightbox": { "allowEditing": false } }
+		}
+	},
+	"styles": {
+		"color": { "background": "var(--wp--preset--color--ivory)", "text": "var(--wp--preset--color--charcoal)" },
+		"typography": { "fontFamily": "var(--wp--preset--font-family--sans)", "fontSize": "var(--wp--preset--font-size--base)", "lineHeight": "1.6" },
+		"spacing": {
+			"blockGap": "1.25rem",
+			"padding": { "left": "clamp(1rem, 4vw, 3rem)", "right": "clamp(1rem, 4vw, 3rem)" }
+		},
+		"elements": {
+			"heading": {
+				"typography": { "fontFamily": "var(--wp--preset--font-family--serif)", "fontWeight": "400", "lineHeight": "1.15" },
+				"color": { "text": "var(--wp--preset--color--charcoal)" }
+			},
+			"h1": { "typography": { "fontSize": "var(--wp--preset--font-size--h-1)", "lineHeight": "1.08" } },
+			"h2": { "typography": { "fontSize": "var(--wp--preset--font-size--h-2)" } },
+			"h3": { "typography": { "fontSize": "var(--wp--preset--font-size--h-3)", "lineHeight": "1.25" } },
+			"link": {
+				"color": { "text": "var(--wp--preset--color--green)" },
+				"typography": { "textDecoration": "underline" },
+				":hover": { "color": { "text": "var(--wp--preset--color--green-dark)" } }
+			},
+			"button": {
+				"color": { "background": "var(--wp--preset--color--green)", "text": "var(--wp--preset--color--paper)" },
+				"border": { "radius": "2px" },
+				"typography": { "fontFamily": "var(--wp--preset--font-family--sans)", "fontWeight": "600", "fontSize": "1rem" },
+				"spacing": { "padding": { "top": "0.8rem", "bottom": "0.8rem", "left": "1.4rem", "right": "1.4rem" } },
+				":hover": { "color": { "background": "var(--wp--preset--color--green-dark)" } }
+			}
+		},
+		"blocks": {
+			"core/separator": { "color": { "text": "var(--wp--preset--color--stone)" } },
+			"core/quote": { "typography": { "fontFamily": "var(--wp--preset--font-family--serif)", "fontStyle": "italic", "fontSize": "var(--wp--preset--font-size--lead)" } }
+		}
+	},
+	"templateParts": [
+		{ "name": "header", "title": "Cabeçalho", "area": "header" },
+		{ "name": "footer", "title": "Rodapé", "area": "footer" }
+	],
+	"customTemplates": [
+		{ "name": "page-wide", "title": "Página larga (sem título)", "postTypes": [ "page" ] }
+	]
+}

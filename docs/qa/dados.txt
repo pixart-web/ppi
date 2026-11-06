@@ -1,0 +1,15 @@
+== Antes: 161 imóveis · 1525 media
+== 2.ª importação (idempotência)
+APLICADO — processados 150 de 150 · criados 0 · atualizados 0 · sem alterações 150 · edições locais preservadas 0 · ignorados 0 · conflitos 0 · erros 0 · media importada 0, reutilizada 0, em falta 0
+== Depois: 161 imóveis · 1525 media
+== Edição local preservada
+APLICADO — processados 150 de 150 · criados 0 · atualizados 0 · sem alterações 149 · edições locais preservadas 1 · ignorados 0 · conflitos 0 · erros 0 · media importada 0, reutilizada 0, em falta 0
+Título editado localmente · preço 340000 · fonte pendente: sim
+== Desativar/reativar plugin e tema não perde dados
+Depois: 161 imóveis · 1525 media
+== Volume
+[]                                                                      3000 resultados · 3.8 ms/pesquisa
+{"tipo":"moradia","quartos":"3"}                                         332 resultados · 1.6 ms/pesquisa
+{"ordem":"preco-desc","preco_max":"1000000","carac":"piscina"}            89 resultados · 2.0 ms/pesquisa
+{"local":"budens","ordem":"preco-asc","pagina":"5"}                     1789 resultados · 3.3 ms/pesquisa
+Tamanho do índice serializado: 1073 KB · memória de pico 64 MB

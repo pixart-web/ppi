@@ -1,0 +1,5 @@
+./code.tar.gz: OK
+./database.sql.gz: OK
+./uploads.tar.gz: OK
+Base de dados restaurada igual à atual:        4 grupos.
+Uploads: atual     8665 · restaurado     8665

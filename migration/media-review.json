@@ -1,0 +1,26 @@
+{
+ "format": "ppi-media-review/1",
+ "reviewed_at": "2026-11-03",
+ "method": "Revisão visual das 150 capas e das primeiras 8 imagens dos imóveis cuja capa não é fotografia. As restantes imagens das galerias não foram revistas individualmente.",
+ "kinds": {"render": "Render ou visualização gerada (inclui «AI-aided / virtual interior design by PPI»)", "graphic": "Gráfico promocional sobre a imagem", "plan": "Planta, levantamento ou imagem de satélite"},
+ "items": {
+  "10320":   {"render": [0,1,2,7]},
+  "10314":   {"render": [0,1,2,3,4]},
+  "10319 A": {"render": [0,1,3,4,5,6]},
+  "10355 B": {"render": [0]},
+  "10386":   {"render": [0,1,2,3]},
+  "10461":   {"render": [0,1,6,7]},
+  "10111":   {"render": [0,1,2,3,4]},
+  "10111A":  {"render": [0,1,2,3,4]},
+  "10359":   {"render": [0,1,2,3,4,5,6,7]},
+  "10411 G": {"render": [0]},
+  "10447":   {"render": [0,1,2,3]},
+  "10454":   {"render": [0,1,2,5]},
+  "10459":   {"graphic": [0], "render": [1], "plan": [2]},
+  "10456":   {"graphic": [0]},
+  "10227":   {"plan": [0]},
+  "10343":   {"plan": [0]},
+  "9076":    {"plan": [0]},
+  "9996":    {"plan": [0]}
+ }
+}
